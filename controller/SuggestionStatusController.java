@@ -38,6 +38,7 @@ public class SuggestionStatusController {
         return ResponseEntity.ok(allRemoved);
     }
 
+    //unique
     @GetMapping("/unique")
     public ResponseEntity<List<GuestSuggestionEntity>>uniqueSuggestion(){
         List<GuestSuggestionEntity> unique = guestSuggestionService.uniqueSuggestion();
